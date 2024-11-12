@@ -1,23 +1,18 @@
 package com.tcs.customermanagement.controller;
 
 import com.tcs.customermanagement.entity.Customer;
-import com.tcs.customermanagement.repository.CustomerRepository;
 import com.tcs.customermanagement.response.CustomerResponse;
 import com.tcs.customermanagement.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/customers")
 public class CustomerController {
 
-    @Autowired
-    private CustomerRepository customerRepository;
     @Autowired
     private CustomerService customerService;
 
